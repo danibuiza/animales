@@ -5,8 +5,8 @@
 requirejs(['jquery'], function($)
 {
 
-    var letras = ["a.jpg", "b.jpg", "c.jpg", "d.jpg", "e.jpg", "f.jpg", "g.jpg", "h.jpg", "i.jpg", "l.jpg", "k.jpg",
-        "m.jpg", "n.jpg", "o.jpg", "q.jpg", "r.jpg", "s.jpg", "t.jpg", "x.jpg", "y.jpg", "z.jpg", "u.jpg", "v.jpg"];
+    var letras = ["a.JPG", "b.JPG", "c.JPG", "d.JPG", "e.JPG", "f.JPG", "g.JPG", "h.JPG", "i.JPG", "l.JPG", "k.JPG",
+        "m.JPG", "n.JPG", "o.JPG", "q.JPG", "r.JPG", "s.JPG", "t.JPG", "x.JPG", "y.JPG", "z.JPG", "u.JPG", "v.JPG"];
 
     var animales = [
         "antilope1.jpg", "antilope2.jpg", "ballenas2.jpg", "barracuda.jpg", "bonito.jpg", "caiman.jpg", "carnero.jpg", "ballenas2.jpg",
@@ -45,7 +45,7 @@ requirejs(['jquery'], function($)
             $(".letras").each(function(index)
             {
                 if (index === indexRandom) {
-                    letraX = "<img src='../pictures/" + letraCorrectaLuego + ".jpg' height='150' width='150'>";
+                    letraX = "<img src='../pictures/" + letraCorrectaLuego + ".JPG' height='150' width='150'>";
                     $(this).html(letraX);
                 }
                 else {
