@@ -6,7 +6,7 @@ requirejs(['jquery'], function($)
 {
 
     var letras = ["a.JPG", "b.JPG", "c.JPG", "d.JPG", "e.JPG", "f.JPG", "g.JPG", "h.JPG", "i.JPG", "l.JPG", "k.JPG",
-        "m.JPG", "n.JPG", "o.JPG", "q.JPG", "r.JPG", "s.JPG", "t.JPG", "x.JPG", "y.JPG", "z.JPG", "u.JPG", "v.JPG"];
+        "m.JPG", "n.JPG", "o.JPG", "q.JPG", "r.JPG", "s.JPG", "t.JPG", "x.JPG", "y.JPG", "z.JPG", "u.JPG", "v.JPG", "w.JPG"];
 
     var animales = [
         "antilope1.jpg", "antilope2.jpg", "ballenas2.jpg", "barracuda.jpg", "bonito.jpg", "caiman.jpg", "carnero.jpg", "ballenas2.jpg",
@@ -22,22 +22,22 @@ requirejs(['jquery'], function($)
 
         image = $(this).find('img').attr('src').split('/');
         var file = image[image.length - 1];
-        letraPulsada = file.substring(0, file.indexOf(".jpg"));
+        letraPulsada = file.substring(0, file.indexOf(".JPG"));
 
-        image = $("#animal").find('img').attr('src').split('/');
-        var file = image[image.length - 1];
-        animalActual = file.substring(0, file.indexOf(".jpg"));
+        imageActual = $("#animal").find('img').attr('src').split('/');
+        var fileActual = imageActual[imageActual.length - 1];
+        animalActual = fileActual.substring(0, fileActual.indexOf(".jpg"));
 
         letraCorrecta = animalActual.substring(0, 1);
 
-        if (letraCorrecta === letraPulsada) {
+        if (letraCorrecta.toUpperCase() === letraPulsada.toUpperCase()) {
 
             $('#error').html("")
 
             indexAnimal = Math.floor((Math.random() * animales.length) + 0);
             animal = "<img src='../pictures/" + animales[indexAnimal] + "' height='500' width='800'>";
 
-            letraCorrectaLuego =animales[indexAnimal].substring(0,1);
+            letraCorrectaLuego = animales[indexAnimal].substring(0, 1);
 
             $('#animal').html(animal);
 
