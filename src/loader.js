@@ -14,7 +14,11 @@ requirejs(['jquery'], function($)
         "husky.jpg", "iguana.jpg", "jabali.jpg", "koala.jpg", "llama.jpg", "llama2.jpg", "lobo1.jpg", "lobo2.jpg", "medusas.jpg",
         "mono.jpg", "nutria.jpg", "nyu.jpg", "orangutan.jpg", "oso panda.jpg", "pantera.jpg", "perro.jpg", "quebrantahuesos.jpg", "rana.jpg", "rebeco.jpg",
         "rinoceronte.jpg", "saltamontes.jpg", "sardina.jpg", "tigre.jpg", "tigre1.jpg", "urogallo.jpg", "vaca.jpg", "wallaby.jpg",
-        "yak.jpg", "zorro.jpg", "zorro1.jpg"
+        "yak.jpg", "zorro.jpg", "zorro1.jpg", "aguila.jpg", "buho.jpg", "buho2.jpg", "camello.jpg", "camello2.jpg", "camello3.jpg", "dromedario.jpg",
+            "dromedario2.jpg", "gallina.jpg", "gallo.jpg", "gaviota.jpg", "gabiota2.jpg",
+            "halcon.jpg", "leon.jpg", "leon2.jpg", "leon3.jpg", "leon4.jpg", "leopardo.jpg", "mandril.jpg", "mono2.jpg", "osopardo.jpg",
+                "osopardo2.jpg", "paloma.jpg", "paloma2.jpg", "pavian.jpg", "perro2.jpg",
+            "perro3.jpg", "perro4.jpg", "perro5.jpg", "pollito.jpg", "tigre3.jpg", "toro.jpg", "toro2.jpg, tiburon.jpg, tiburon2.jpg, gorila.jpg, gorila3.jpg, gorila2.jpg, gorila4.jpg"
     ];
 
     $('.letras').click(function()
