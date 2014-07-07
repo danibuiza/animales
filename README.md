@@ -8,4 +8,6 @@ la letra por la que el animal empieza
 simplemente eso
 
 
-utilizando jquery para el tema de ensenyar las imagines y cargarlas y backbone para la estructura de datos y el workflow
+utilizando jquery para el tema de ensenyar las imagines y cargarlas, requirejs para cargar los js necesarios
+
+nada mas, simple y le gusta mucho, asi que voy a meter poco a poco muchos animales diferentes...ya voy por 136, mi objetivo es meter 500
