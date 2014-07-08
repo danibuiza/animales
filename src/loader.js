@@ -10,7 +10,7 @@ requirejs(['jquery'], function($)
 
     var animales = ["arce.jpg", "avestruz.jpg", "caballitomar.jpg", "ciervo.jpg", "cochinos.jpg", "delfin.jpg", "elefante.jpg", "foca.jpg", "gorila0.jpg",
         "guepardo2.jpg", "jirafa.jpg", "koalas.jpg", "lince.jpg", "mono_narzi.jpg"
-        , "osopolar.jpg", "osopolar2.jpg", "pandarojo.jpg", "pinguinos.jpg", "tiburonpeligroso.jpg", "tigreblanco.jpg", "tortugamarina.jpg", "zebra.jpg",
+        , "osopolar.jpg", "osopolar2.jpg", "pandarojo.jpg", "pinguinos.jpg", "tiburon_peligroso.jpg", "tigreblanco.jpg", "tortugamarina.jpg", "zebra.jpg",
         "antilope1.jpg", "antilope2.jpg", "ballenas2.jpg", "barracuda.jpg", "bonito.jpg", "caiman.jpg", "carnero.jpg", "ballenas2.jpg",
         "carnero2.jpg", "coyote.jpg", "dalmata.jpg", "elefante-8.jpg", "flamenco.jpg", "gorrion.jpg", "gorrion2.jpg", "grulla.jpg",
         "husky.jpg", "iguana.jpg", "jabali.jpg", "koala.jpg", "llama.jpg", "llama2.jpg", "lobo1.jpg", "lobo2.jpg", "medusas.jpg",
@@ -20,7 +20,7 @@ requirejs(['jquery'], function($)
         "dromedario2.jpg", "gallina.jpg", "gallo.jpg", "gaviota.jpg", "gabiota2.jpg",
         "halcon.jpg", "leon.jpg", "leon2.jpg", "leon3.jpg", "leon4.jpg", "leopardo.jpg", "mandril.jpg", "mono2.jpg", "osopardo.jpg",
         "osopardo2.jpg", "paloma.jpg", "paloma2.jpg", "pavian.jpg", "perro2.jpg",
-        "perro3.jpg", "perro4.jpg", "perro5.jpg", "pollito.jpg", "tigre3.jpg", "toro.jpg", "toro2.jpg, tiburon.jpg", "tiburon2.jpg", "gorila.jpg", "gorila3.jpg", "gorila2.jpg", "gorila4.jpg"
+        "perro3.jpg", "perro4.jpg", "perro5.jpg", "pollito.jpg", "tigre3.jpg", "toro.jpg", "toro2.jpg", "tiburon.jpg", "tiburon2.jpg", "gorila.jpg", "gorila3.jpg", "gorila2.jpg", "gorila4.jpg"
     ];
 
     $('.letras').click(function()
@@ -49,12 +49,13 @@ requirejs(['jquery'], function($)
 
             indexRandom = Math.floor((Math.random() * 3) + 0);
             letrasUsadas = [];
+            letraX = "<img src='../pictures/" + letraCorrectaLuego + ".JPG' height='150' width='150'>";
+            letrasUsadas[letrasUsadas.length] = letraX;
             $(".letras").each(function(index)
             {
                 if (index === indexRandom) {
                     letraX = "<img src='../pictures/" + letraCorrectaLuego + ".JPG' height='150' width='150'>";
                     $(this).html(letraX);
-                    letrasUsadas[letrasUsadas.length] = letraX;
                 }
                 else {
                     letraUsada = true;
