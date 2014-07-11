@@ -23,6 +23,8 @@ requirejs(['jquery'], function($)
         "perro3.jpg", "perro4.jpg", "perro5.jpg", "pollito.jpg", "tigre3.jpg", "toro.jpg", "toro2.jpg", "tiburon.jpg", "tiburon2.jpg", "gorila.jpg", "gorila3.jpg", "gorila2.jpg", "gorila4.jpg"
     ];
 
+    var intentadas = 0;
+
     $('.letras').click(function()
     {
 
@@ -38,6 +40,7 @@ requirejs(['jquery'], function($)
 
         if (letraCorrecta.toUpperCase() === letraPulsada.toUpperCase()) {
 
+            intentadas = 0;
             $('#error').html("")
 
             indexAnimal = Math.floor((Math.random() * animales.length) + 0);
@@ -74,7 +77,10 @@ requirejs(['jquery'], function($)
 
         }
         else {
-            $('#error').html("Incorrecto! Intentalo otra vez");
+            intentadas++;
+            if (intentadas > 2) {
+                $('#error').html("<audio src='../sounds/horse.mp3'  controls  autoplay>Your browser does not support the audio element.</audio>");
+            }
         }
     });
 
