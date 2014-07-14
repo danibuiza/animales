@@ -17,7 +17,7 @@ requirejs(['jquery'], function($)
         "mono.jpg", "nutria.jpg", "nyu.jpg", "orangutan.jpg", "oso panda.jpg", "pantera.jpg", "perro.jpg", "quebrantahuesos.jpg", "rana.jpg", "rebeco.jpg",
         "rinoceronte.jpg", "saltamontes.jpg", "sardina.jpg", "tigre.jpg", "tigre1.jpg", "urogallo.jpg", "vaca.jpg", "wallaby.jpg",
         "yak.jpg", "zorro.jpg", "zorro1.jpg", "aguila.jpg", "buho.jpg", "buho2.jpg", "camello.jpg", "camello2.jpg", "camello3.jpg", "dromedario.jpg",
-        "dromedario2.jpg", "gallina.jpg", "gallo.jpg", "gaviota.jpg", "gabiota2.jpg",
+        "dromedario2.jpg", "gallina.jpg", "gallo.jpg", "gaviota.jpg", "gaviota2.jpg",
         "halcon.jpg", "leon.jpg", "leon2.jpg", "leon3.jpg", "leon4.jpg", "leopardo.jpg", "mandril.jpg", "mono2.jpg", "osopardo.jpg",
         "osopardo2.jpg", "paloma.jpg", "paloma2.jpg", "pavian.jpg", "perro2.jpg",
         "perro3.jpg", "perro4.jpg", "perro5.jpg", "pollito.jpg", "tigre3.jpg", "toro.jpg", "toro2.jpg", "tiburon.jpg", "tiburon2.jpg", "gorila.jpg", "gorila3.jpg", "gorila2.jpg", "gorila4.jpg"
@@ -41,6 +41,9 @@ requirejs(['jquery'], function($)
         if (letraCorrecta.toUpperCase() === letraPulsada.toUpperCase()) {
 
             intentadas = 0;
+            var myAudio = document.getElementById("audioburro");
+            myAudio.load();
+
             $('#error').html("")
 
             indexAnimal = Math.floor((Math.random() * animales.length) + 0);
@@ -79,7 +82,8 @@ requirejs(['jquery'], function($)
         else {
             intentadas++;
             if (intentadas > 2) {
-                $('#error').html("<audio src='../sounds/horse.mp3'  controls  autoplay>Your browser does not support the audio element.</audio>");
+                var myAudio = document.getElementById("audioburro");
+                myAudio.play();
             }
         }
     });
