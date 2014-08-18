@@ -11,7 +11,7 @@ requirejs(['jquery'], function($)
     var animales = ["arce.jpg", "avestruz.jpg", "caballitomar.jpg", "ciervo.jpg", "cochinos.jpg", "delfin.jpg", "elefante.jpg", "foca.jpg", "gorila0.jpg",
         "guepardo2.jpg", "jirafa.jpg", "koalas.jpg", "lince.jpg", "mono_narzi.jpg"
         , "osopolar.jpg", "osopolar2.jpg", "pandarojo.jpg", "pinguinos.jpg", "tiburon_peligroso.jpg", "tigreblanco.jpg", "tortugamarina.jpg", "zebra.jpg",
-        "antilope1.jpg", "antilope2.jpg", "ballenas2.jpg", "barracuda.jpg", "bonito.jpg", "caiman.jpg", "carnero.jpg", "ballenas2.jpg",
+        "antilope1.jpg", "antilope2.jpg", "orca.jpg", "barracuda.jpg", "bonito.jpg", "caiman.jpg", "carnero.jpg", "orca.jpg",
         "carnero2.jpg", "coyote.jpg", "dalmata.jpg", "elefante-8.jpg", "flamenco.jpg", "gorrion.jpg", "gorrion2.jpg", "grulla.jpg",
         "husky.jpg", "iguana.jpg", "jabali.jpg", "koala.jpg", "llama.jpg", "llama2.jpg", "lobo1.jpg", "lobo2.jpg", "medusas.jpg",
         "mono.jpg", "nutria.jpg", "nyu.jpg", "orangutan.jpg", "oso panda.jpg", "pantera.jpg", "perro.jpg", "quebrantahuesos.jpg", "rana.jpg", "rebeco.jpg",
