@@ -47,7 +47,7 @@ requirejs(['jquery'], function($)
             $('#error').html("")
 
             indexAnimal = Math.floor((Math.random() * animales.length) + 0);
-            animal = "<img src='../pictures/" + animales[indexAnimal] + "' height='500px' width='800px'>";
+            animal = "<img src='../pictures/" + animales[indexAnimal] + "' height='450px' width='750px'>";
 
             letraCorrectaLuego = animales[indexAnimal].substring(0, 1);
 
