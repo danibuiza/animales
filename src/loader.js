@@ -47,7 +47,7 @@ requirejs(['jquery'], function($)
             $('#error').html("")
 
             indexAnimal = Math.floor((Math.random() * animales.length) + 0);
-            animal = "<img src='../pictures/" + animales[indexAnimal] + "' height='500' width='800'>";
+            animal = "<img src='../pictures/" + animales[indexAnimal] + "' height='450px' width='750px'>";
 
             letraCorrectaLuego = animales[indexAnimal].substring(0, 1);
 
@@ -55,19 +55,19 @@ requirejs(['jquery'], function($)
 
             indexRandom = Math.floor((Math.random() * 3) + 0);
             letrasUsadas = [];
-            letraX = "<img src='../pictures/" + letraCorrectaLuego + ".JPG' height='150' width='150'>";
+            letraX = "<img src='../pictures/" + letraCorrectaLuego + ".JPG' height='125px' width='125px'>";
             letrasUsadas[letrasUsadas.length] = letraX;
             $(".letras").each(function(index)
             {
                 if (index === indexRandom) {
-                    letraX = "<img src='../pictures/" + letraCorrectaLuego + ".JPG' height='150' width='150'>";
+                    letraX = "<img src='../pictures/" + letraCorrectaLuego + ".JPG' height='125px' width='125px'>";
                     $(this).html(letraX);
                 }
                 else {
                     letraUsada = true;
                     while (letraUsada) {
                         indexLetra = Math.floor((Math.random() * letras.length) + 0);
-                        letraX = "<img src='../pictures/" + letras[indexLetra] + "' height='150' width='150'>";
+                        letraX = "<img src='../pictures/" + letras[indexLetra] + "' height='125px' width='125px'>";
                         if ($.inArray(letraX, letrasUsadas) === -1) {
                             $(this).html(letraX);
                             letrasUsadas[letrasUsadas.length] = letraX;
